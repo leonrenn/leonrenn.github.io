@@ -5,19 +5,129 @@
     <meta charset="UTF-8">
     <title>Leon Renn</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+
+        @keyframes slide-up {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <div class="menu">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
+    <div class="container">
+        <div class="left">
+            <span class="name">LEON RENN</span>
+            <div class="information">
+                <h2>Leon Renn</h2>
+                    <p>Welcome to my personal website. Here are some infos about me. Enjoy reading 😌</p>
+            
+                    <section id="school-section">
+                        <h2>School</h2>
+                        <p>Isar-Sport-Gymnasium in Munich (from 2010 - 2018)</p>
+                    </section>
+            
+                    <section id="university-section">
+                        <h2>University  <a href="https://www.tum.de">
+                            <img src="sources/tum-logo.png" alt="TUM Icon" class="icon">
+                            </a>
+                        
+                        </h2>
+                        <p>
+                            <u><b>Bachelor:</b></u><br>
+                            <br>
+                                Particle Physics at the Technical University Munich (from 10.2018 - 09.2021)<br>
+                            <br>
+                                Bachelor Thesis at the Chair of Experimental Astro-Particle Physics E15: <i>thesis name</i><br>
+                            <br>
+                            <u><b>Master:</b></u><br>
+                            <br>
+                                Particle Physics at the Technical University Munich (from 10.2021 - 03.2024)<br>
+                            <br>
+                            Mater Thesis at the Chair of Data Science in Physics: <i>thesis name</i><br>
+                        </p>
+                    </section>
+            
+                    <section id="work-section">
+                        <h2>Work</h2>
+                        <p>
+                            Working student position at Mirion Technologies in Munich in DDE, SWD, and EQU.<br>
+                            Multiple projects ...
+                        </p>
+                    </section>
+            
+                    <section id="others-section">
+                        <h2>Others</h2>
+                        <p>
+                            Internship at the Chair of Data Science in Physics (from 01.2023 - now).<br>
+                            Private Tutoring in Math (2022 - now).
+                        </p>
+                    </section>
+            
+                    <section id="sports-section">
+                        <h2>Sports</h2>
+                        <p>
+                            I am a really big sports enthusiast and therefore do all kinds of different sports such as:
+                        </p>
+                        <ul>
+                            <li>Soccer</li>
+                            <li>Skiing</li>
+                            <li>Mountain Biking</li>
+                            <li>Basketball</li>
+                            <li>CrossFit</li>
+                            <li>Swimming</li>
+                            <li>Boxing</li>
+                        </ul>
+                    </section>
+            
+                    <section id="interests-section">
+                        <h2>Interests</h2>
+                        <p>
+                            Besides lots of sports, I love spending time learning all kinds of things.<br>
+                            Of course, I really enjoy spending time with friends and family.<br>
+                        </p>
+                    </section>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="sources/profile.png" alt="Profile Picture" class="profile-picture">
+            <div class="icons">
+                <a href="https://github.com/leonrenn">
+                    <img src="sources/github-mark.png" alt="Github Icon" class="icon">
+                </a>
+                <a href="https://www.instagram.com/leon.renn">
+                    <img src="sources/Instagram_Glyph_Black.png" alt="Instagram Icon" class="icon">
+                </a>
+                <a href="mailto:leon.renn@tum.de">
+                    <img src="sources/email_icon.png" alt="Email Icon" class="icon">
+                </a>
+            </div>
+        </div>
     </div>
-    <div class="main">
-        <h1 id="about">Home</h1>
-        <p>Welcome to my personal website.</p>
-    </div>
+
+    <footer>
+        <p>&copy; 2023 Leon Renn. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const nameElement = document.querySelector('.name');
+        const informationElement = document.querySelector('.information');
+        const leftContainer = document.querySelector('.left');
+
+        nameElement.addEventListener('click', () => {
+            nameElement.style.display = 'none';
+            informationElement.classList.add('show-information');
+            informationElement.classList.add('slide-up');
+            leftContainer.style.overflowY = 'scroll';
+        });
+    </script>
 </body>
 
 </html>
