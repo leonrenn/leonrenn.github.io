@@ -45,7 +45,10 @@
     box-sizing: border-box;
   }
 
-  
+  .normal-link {
+    color: inherit; /* Inherit text color */
+    text-decoration: none; /* Remove underline */
+  }
 
   .p {
     margin: 10px 0;
