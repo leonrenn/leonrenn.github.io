@@ -1,0 +1,88 @@
+.body {
+font-family: Arial;
+margin: 0;
+padding: 0;
+}
+
+nav {
+background-color: #ffffff;
+color: #777;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+}
+
+nav ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav li {
+margin: 0 10px;
+}
+
+nav a {
+color: #777;
+text-decoration: none;
+font-size: 18px;
+font-weight: bold;
+transition: all 0.3s ease;
+}
+
+nav a:hover {
+color: #f00;
+}
+
+header {
+background-color: #333;
+color: #fff;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+margin: 0;
+}
+
+main {
+padding: 20px;
+max-width: 800px;
+margin: 0 auto;
+}
+
+.blog-post {
+margin-bottom: 30px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+}
+
+.blog-post:last-child {
+border-bottom: none;
+padding-bottom: 0;
+}
+
+.blog-post h2 {
+margin-top: 0;
+}
+
+.blog-post .timestamp {
+color: #999;
+font-size: 14px;
+}
+
+.code-cell {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow-x: auto;
+  }
+
+  .code-cell code {
+    display: block;
+    color: #333;
+  }
