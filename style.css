@@ -2,26 +2,33 @@
   .body {
     margin: 0;
     padding: 0;
-    overflow: hidden; /* Prevent scrolling on the body */
+    overflow: hidden;
     background-color: black;
     font-family: Arial;
   }
   .container {
     display: flex;
-    height: 100vh; /* Set the container height to full viewport height */
+    height: 100vh; 
     background-color: black;
   }
 
   .name {
-    font-size: 80px; /* Adjust the font size as desired */
-    color: white; /* Adjust the color as desired */
+    font-size: 80px;
+    color: white; 
     font-family: Arial;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
   }
+    
 
   .information {
     display: none;
     color: white;
     font-family: Arial;
+    padding-left: 10px;
+    padding-right: 10px;
     }
 
     .show-information {
@@ -34,20 +41,17 @@
 
 
   .left {
-    flex: 1; /* Take up 50% of the container width */
-    background-color: black; /* Background color for the left part */
+    flex: 1;
+    background-color: black; 
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
-    overflow-y: auto;
-    /* pad such that all content is visible */
-    padding-top: 150px;
-    box-sizing: border-box;
+    justify-content: center;
   }
 
   .normal-link {
-    color: inherit; /* Inherit text color */
-    text-decoration: none; /* Remove underline */
+    color: lightblue; 
+    text-decoration: none; 
+    font-style: italic;
+
   }
 
   .p {
@@ -56,31 +60,31 @@
   }
 
   .right {
-    flex: 1; /* Take up 50% of the container width */
-    background-color: white; /* Background color for the right part */
+    flex: 1; 
+    background-color: white; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center; 
+    justify-content: center; 
   }
   .profile-picture {
-    width: 475px; /* Adjust the size of the profile picture as desired */
+    width: 475px; 
     height: 640px;
     border-radius: 100%;
-    background-color: white; /* Placeholder color for the profile picture */
+    background-color: white; 
   }
   .icons {
-    margin-top: 20px; /* Adjust the margin as desired */
+    margin-top: 20px; 
     display: flex;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
+    align-items: center; 
+    justify-content: center; 
   }
   .icon {
-    margin: 0 10px; /* Adjust the margin as desired */
+    margin: 0 10px; 
   }
   
   .footer {
-    background-color: #d5d1d1;
+    background-color: #ffffff;
     text-align: center;
     font-size: 14px;
     color: #777;
