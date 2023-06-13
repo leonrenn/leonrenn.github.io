@@ -36,7 +36,7 @@ color: #f00;
 }
 
 header {
-background-color: #333;
+background-color: black;
 color: #fff;
 padding: 20px;
 text-align: center;
@@ -117,4 +117,11 @@ font-size: 14px;
   .code-cell code {
     display: block;
     color: #333;
+  }
+
+  .footer {
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
   }
