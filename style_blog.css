@@ -108,6 +108,15 @@ margin-top: 0;
   margin-bottom: 10px;
 }
 
+.normal-link {
+  color: inherit; 
+  text-decoration: none; 
+  font-style: italic;
+}
+.normal-link:hover{
+  color:red;
+}
+
 
 .blog-post .timestamp {
 color: #999;
