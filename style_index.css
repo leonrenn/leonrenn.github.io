@@ -30,6 +30,7 @@
     font-size: 18px;
     font-weight: bold;
     transition: all 0.3s ease;
+    font-family: Arial;
   }
   
   nav a:hover {
@@ -52,6 +53,8 @@
     transform: translate(-50%, -50%);
     cursor: pointer;
   }
+
+
     
 
   .information {

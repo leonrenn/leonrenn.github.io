@@ -4,6 +4,10 @@ margin: 0;
 padding: 0;
 }
 
+.h1 {
+  font-family: Arial;
+}
+
 nav {
 background-color: #ffffff;
 color: #777;
@@ -29,6 +33,7 @@ text-decoration: none;
 font-size: 18px;
 font-weight: bold;
 transition: all 0.3s ease;
+font-family: Arial;
 }
 
 nav a:hover {
@@ -54,6 +59,7 @@ margin: 0 auto;
 
 .search{
   text-align: center;
+  font-family: Arial;
 }
 
 input[type="text"] {
@@ -88,6 +94,7 @@ button:hover {
 margin-bottom: 30px;
 border-bottom: 1px solid #ddd;
 padding-bottom: 20px;
+font-family: Arial;
 }
 
 .blog-post:last-child {
@@ -141,6 +148,10 @@ font-size: 14px;
   .code-cell code {
     display: block;
     color: #333;
+  }
+
+  .gif-kl{
+    text-align: center;
   }
 
   .footer {
