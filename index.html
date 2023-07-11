@@ -182,6 +182,10 @@
     </footer>
 
     <script>
+        if (/Mobi/.test(navigator.userAgent)) {
+            window.location.href = 'index_mobile.html';
+        }
+
         const nameElement = document.querySelector('.name');
         const informationElement = document.querySelector('.information');
         const leftContainer = document.querySelector('.left');
