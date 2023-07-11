@@ -3,134 +3,168 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leon Renn - Blog</title>
     <link rel="stylesheet" href="style_blog.css">
+    <style>
+        @media only screen and (max-width: 600px) {
+            .search {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .search input,
+            .search button {
+                margin-top: 10px;
+                width: 100%;
+            }
+            .footer{
+                text-align: center;
+            }
+        }
+
+    </style>
 </head>
 
 <body>
     <div class="menu">
         <nav>
             <ul>
-              <li><a href="index.html" title="Home">Home</a></li>
-              <li class="active"><a href="blog.html" title="Blog">Blog</a></li>
+                <li><a href="index.html" title="Home">Home</a></li>
+                <li class="active"><a href="blog.html" title="Blog">Blog</a></li>
             </ul>
-          </nav>
+        </nav>
     </div>
-  <header>
-    <h1 class="title">My Blog</h1>
-  </header>
+    <header>
+        <h1 class="title">My Blog</h1>
+    </header>
 
-  <main>
-    <div class="search">
-      <label for="tag-search">Search by Tag:</label>
-      <input type="text" id="tag-search" />
-      <button onclick="filterPosts()">Search</button>
-    </div>
-    
-    <hr>
-
-    <article class="blog-post" data-tags="markdown todo html css organize tasks notes markup lightweight code">
-      <h2>3. TODO Lists in Markdown</h2>
-      <p>
-        Hello folks,
-      </p>
-      <p>
-        This post will be about TODO lists in Markdown. I will show you how to create TODO lists in Markdown and enhance the basic structure
-        with some more features. Feel free to inspire yourself and use the code for your own TODO lists.
-        The markdown file describing the changes is on my github: <a href="https://github.com/leonrenn/BLOG-POST/blob/main/todo.md" class="normal-link">TODO List</a>.
-        <div class="example_todo">
-          <img src="sources/todo_example.png" alt="TODO List in Markdown" height="250" width="398">
+    <main>
+        <div class="search">
+            <label for="tag-search">Search by Tag:</label>
+            <input type="text" id="tag-search" placeholder="Enter a tag">
+            <button onclick="filterPosts()">Search</button>
         </div>
-      </p>
 
-      <br>
-      <b>TAGS:</b><br> 
-      <p class="tags">markdown todo html css organize tasks notes markup lightweight code</p>
+        <hr>
 
-      <p class="timestamp">Posted on July 10, 2023</p>
-    </article>
+        <article class="blog-post" data-tags="markdown todo html css organize tasks notes markup lightweight code">
+            <h2>3. TODO Lists in Markdown</h2>
+            <p>
+                Hello folks,
+            </p>
+            <p>
+                This post will be about TODO lists in Markdown. I will show you how to create TODO lists in Markdown and
+                enhance the basic structure with some more features. Feel free to inspire yourself and use the code for your
+                own TODO lists.
+            </p>
+            <p>
+                The markdown file describing the changes is on my GitHub:
+                <a href="https://github.com/leonrenn/BLOG-POST/blob/main/todo.md" class="normal-link">TODO List</a>.
+            </p>
+            <div class="example_todo">
+                <img src="sources/todo_example.png" alt="TODO List in Markdown" height="250" width="398">
+            </div>
 
-    <article class="blog-post" data-tags="opening closing morphological image processing python plots erosion dilation">
-      <h2>2. Morphological Operations - Opening and Closing</h2>
-      <p>
-        Hi all,
-      </p>
-      <p>
-        In this post a give a short and practical introduction into the morphological operations opening and closing.
-        The operations are explained with the help of a python code snippet and some plots.
-        Have fun!
-        And of course the source code is available <a href="https://github.com/leonrenn/BLOG-POST/blob/main/opening_closing.ipynb" class="normal-link">here</a>.
-        <div class="opening_closing">
-          <img src="sources/opening_closing.png" alt="Opening and Closing of Solar System Picture" height="260" width="720">
-        </div>
-      </p>
+            <br>
+            <b>TAGS:</b><br>
+            <p class="tags">markdown todo html css organize tasks notes markup lightweight code</p>
 
-      <br>
-      <b>TAGS:</b><br> 
-      <p class="tags">opening closing morphological image processing python plots erosion dilation</p>
+            <p class="timestamp">Posted on July 10, 2023</p>
+        </article>
 
-      <p class="timestamp">Posted on June 20, 2023</p>
-    </article>
+        <article class="blog-post"
+            data-tags="opening closing morphological image processing python plots erosion dilation">
+            <h2>2. Morphological Operations - Opening and Closing</h2>
+            <p>
+                Hi all,
+            </p>
+            <p>
+                In this post, I give a short and practical introduction to the morphological operations opening and closing.
+                The operations are explained with the help of a Python code snippet and some plots. Have fun!
+            </p>
+            <p>
+                And of course, the source code is available
+                <a href="https://github.com/leonrenn/BLOG-POST/blob/main/opening_closing.ipynb"
+                    class="normal-link">here</a>.
+            </p>
+            <div class="opening_closing">
+                <img src="sources/opening_closing.png" alt="Opening and Closing of Solar System Picture" height="260"
+                    width="720">
+            </div>
 
-    <article class="blog-post" data-tags="blogpost kl KL_divergence probability theory visualization 1 gif math information statistics">
-      <h2>1. Intuitive Introduction to KL Divergence</h2>
-      <p>
-        Hi together,
-      </p>
-      <p>
-        In this post I want to give an intuitive introduction to the KL Divergence. The KL Divergence is a measure of how different two probability distributions are. 
-        The KL Divergence is visualized for two Gaussian distributions in a explanatory way. Hope you enjoy it!
-        And of course the source code is available <a href="https://github.com/leonrenn/BLOG-POST/blob/main/KL_divergence.ipynb" class="normal-link">here</a>.
-        <div class="gif-kl">
-          <img src="sources/KL_divergence.gif" alt="Animated GIF" height="240" width="480">
-        </div>
-      </p>
+            <br>
+            <b>TAGS:</b><br>
+            <p class="tags">opening closing morphological image processing python plots erosion dilation</p>
 
-      <br>
-      <b>TAGS:</b><br> 
-      <p class="tags">blogpost kl KL_divergence probability theory visualization 1 gif math information statistics</p>
+            <p class="timestamp">Posted on June 20, 2023</p>
+        </article>
 
-      <p class="timestamp">Posted on June 14, 2023</p>
-    </article>
+        <article class="blog-post" data-tags="blogpost kl KL_divergence probability theory visualization 1 gif math information statistics">
+            <h2>1. Intuitive Introduction to KL Divergence</h2>
+            <p>
+                Hi together,
+            </p>
+            <p>
+                In this post, I want to give an intuitive introduction to the KL Divergence. The KL Divergence is a measure
+                of how different two probability distributions are.
+            </p>
+            <p>
+                The KL Divergence is visualized for two Gaussian distributions in an explanatory way. Hope you enjoy it!
+            </p>
+            <p>
+                And of course, the source code is available
+                <a href="https://github.com/leonrenn/BLOG-POST/blob/main/KL_divergence.ipynb" class="normal-link">here</a>.
+            </p>
+            <div class="gif-kl">
+                <img src="sources/KL_divergence.gif" alt="Animated GIF" height="240" width="480">
+            </div>
 
-    <article class="blog-post" data-tags="initial first 0 welcome hello world python code snippet blogpost">
-      <h2>0. Initial </h2>
-      <p>Hi together,
-        This is my blog. The topics will be completely random and will just be about things I have found interesting at a particular time.
-        Just write me an email if you want to discuss with me about something.
-        And since this is a more scientific related blog, I am writing the obligatory Hello World! in Python:
-    </p>
+            <br>
+            <b>TAGS:</b><br>
+            <p class="tags">blogpost kl KL_divergence probability theory visualization 1 gif math information statistics</p>
 
-      <div class="code-cell">
-        print("Hello World!")
-      </div>
-      <br>
-      <b>TAGS:</b><br> 
-      <p class="tags">initial first 0 welcome hello world python code snippet</p>
-      <p class="timestamp">Posted on June 13, 2023</p>
-    </article>
+            <p class="timestamp">Posted on June 14, 2023</p>
+        </article>
 
-  </main>
+        <article class="blog-post" data-tags="initial first 0 welcome hello world python code snippet blogpost">
+            <h2>0. Initial</h2>
+            <p>Hi together, This is my blog. The topics will be completely random and will just be about things I have
+                found interesting at a particular time.</p>
+            <p>
+                Just write me an email if you want to discuss something with me. And since this is a more scientifically
+                related blog, I am writing the obligatory Hello World! in Python:
+            </p>
+            <div class="code-cell">
+                <code>print("Hello World!")</code>
+            </div>
+            <br>
+            <b>TAGS:</b><br>
+            <p class="tags">initial first 0 welcome hello world python code snippet</p>
+            <p class="timestamp">Posted on June 13, 2023</p>
+        </article>
 
-  <footer class="footer">
-    <p>&copy; 2023 Leon Renn. All rights reserved.</p>
-  </footer>
+    </main>
 
-  <script>
-    function filterPosts() {
-      const searchValue = document.getElementById("tag-search").value.toLowerCase();
-      const blogPosts = document.querySelectorAll(".blog-post");
+    <footer class="footer">
+        <p>&copy; 2023 Leon Renn. All rights reserved.</p>
+    </footer>
 
-      blogPosts.forEach((post) => {
-        const tags = post.getAttribute("data-tags").split(" ");
-        if (tags.includes(searchValue)) {
-          post.style.display = "block";
-        } else {
-          post.style.display = "none";
+    <script>
+        function filterPosts() {
+            const searchValue = document.getElementById("tag-search").value.toLowerCase();
+            const blogPosts = document.querySelectorAll(".blog-post");
+
+            blogPosts.forEach((post) => {
+                const tags = post.getAttribute("data-tags").split(" ");
+                if (tags.includes(searchValue)) {
+                    post.style.display = "block";
+                } else {
+                    post.style.display = "none";
+                }
+            });
         }
-      });
-    }
-  </script>
+    </script>
 </body>
 
 </html>
+

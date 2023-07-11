@@ -3,9 +3,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leon Renn - Home</title>
     <link rel="stylesheet" href="style_index.css">
     <style>
+        @media only screen and (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+            .right {
+                margin-top: 20px;
+            }
+            .footer {
+                text-align: center;
+            }
+        }
 
         @keyframes slide-up {
             0% {
@@ -16,7 +31,10 @@
                 transform: translateY(0%);
                 opacity: 1;
             }
+
+            
         }
+
     </style>
 </head>
 
@@ -24,14 +42,14 @@
     <div class="menu">
         <nav>
             <ul>
-              <li class="active"><a href="index.html" title="Home">Home</a></li>
-              <li><a href="blog.html" title="Blog">Blog</a></li>
+                <li class="active"><a href="index.html" title="Home">Home</a></li>
+                <li><a href="blog.html" title="Blog">Blog</a></li>
             </ul>
-          </nav>
+        </nav>
     </div>
     <div class="container">
         <div class="left">
-            <span class="name" title="Click on my name and see my CV.">LEON RENN</span>
+            <span class="name" title="Click on my name and see my CV.">Leon Renn</span>
             <div class="information">
                 <section id="school-section">
                     <h2>School</h2>
@@ -174,7 +192,6 @@
             informationElement.classList.add('slide-up');
             informationElement.style.justifyContent = 'center';
             leftContainer.style.overflowY = 'scroll';
-
         });
     </script>
 </body>
