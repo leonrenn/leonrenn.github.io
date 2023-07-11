@@ -5,50 +5,35 @@
     <meta charset="UTF-8">
     <title>Leon Renn - Home</title>
     <link rel="stylesheet" href="style_index_mobile.css">
-    <style>
-        /* CSS for the hamburger menu */
-        .hamburger {
-            display: none;
-            cursor: pointer;
-        }
-
-        .menu {
-            display: none;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: block;
-            }
-
-            .menu.open {
-                display: flex;
-            }
-        }
-    </style>
-    <script>
-        // JavaScript for toggling the menu
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            menu.classList.toggle('open');
-        }
-    </script>
 </head>
 
 <body>
-    <header>
-        <div class="hamburger" onclick="toggleMenu()">
-            &#9776;
+    <nav>
+      <div class="navbar">
+        <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>  
+          <div class="logo">
+            <h1>Navbar</h1>
+          </div>
+          <div class="menu-items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">blogs</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#">contact</a></li>
+          </div>
         </div>
-        <nav class="menu" id="menu">
-            <a href="index_mobile.html">Home</a>
-            <a href="blog_mobile.html">Blog</a>
-        </nav>
-    </header>
+      </div>
+    </nav>
 
-    <!-- Content for the mobile version goes here -->
+    Other content
+
+  </body>
 
     <footer class="footer">
         <p>&copy; 2023 Leon Renn. All rights reserved.</p>
@@ -56,4 +41,3 @@
 </body>
 
 </html>
-
