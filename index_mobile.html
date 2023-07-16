@@ -1,43 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Leon Renn - Home</title>
-    <link rel="stylesheet" href="style_index_mobile.css">
+    <title>Smooth Scrolling Sections with Sticky Menu</title>
+    <link rel="stylesheet" type="text/css" href="style_index_mobile.css">
 </head>
-
 <body>
-    <nav>
-      <div class="navbar">
-        <div class="container nav-container">
-            <input class="checkbox" type="checkbox" name="" id="" />
-            <div class="hamburger-lines">
-              <span class="line line1"></span>
-              <span class="line line2"></span>
-              <span class="line line3"></span>
-            </div>  
-          <div class="logo">
-            <h1>Navbar</h1>
-          </div>
-          <div class="menu-items">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">blogs</a></li>
-            <li><a href="#">portfolio</a></li>
-            <li><a href="#">contact</a></li>
-          </div>
+    <div class="menu">
+        <a href="#" class="active" title="Home">Home</a>
+        <a href="blog_mobile.html" title="Blog">Blog</a>
+        <a href="contact_mobile.html" title="Contact">Contact</a>
+    </div>
+
+    <section id="section1" class="section visible">
+        <h2 class="name">Leon Renn</h2>
+    </section>
+
+    <section id="section2" class="section">
+        <h2>School</h2>
+        <div class="content">
+            <h3>Isar-Sport-Gymnasium in Munich (2010 - 2018)</h3>
         </div>
-      </div>
-    </nav>
+    </section>
 
-    Other content
+    <section id="section3" class="section">
+        <h2>University</h2>
+        <div class="content">
+            <h3>Bachelor</h3>
+            <p>Particle Physics at the Technical University Munich (2018 - 2021)</p>
+            <br>
+            <p> <a href="sources/bachelor_thesis_leon_renn.pdf">Bachelor Thesis</a> at the <a href="https://www.ph.tum.de/research/groups/group/TUPHE15">Chair of Experimental Astro-Particle Physics E15</a></p>
+        </div>
+    </section>
 
-  </body>
+    <section id="section4" class="section">
+        <h2>University</h2>
+        <div class="content">
+            <h3>Master</h3>
+            <p>Particle Physics at the Technical University Munich (2021 - 2024)</p>
+            <br>
+            <p>Master Thesis at the Chair of <a href="https://www.ph.tum.de/research/groups/group/TUPHEDS">Data Science in Physics</a></p>
+        </div>
+    </section>
 
-    <footer class="footer">
-        <p>&copy; 2023 Leon Renn. All rights reserved.</p>
-    </footer>
+    <section id="section5" class="section">
+        <h2>Work</h2>
+        <div class="content">
+            <h3>Mirion Technologies</h3>
+            <p>
+                Working student in DDE, SWD, and EQU<br>
+                <ul>
+                    <li>Analysis and evaluation of alternatives for Low Noise cables</li>
+                    <li>GUI Development for automated testing purposes</li>
+                    <li>Designing of electrical parts for hardware connection</li>
+                    <li>Development of python libraries for automated testing</li>
+                    <li>PowerApps and Excel applications for workflow improvements</li>
+                    <li>Technical documentation in German, English, and French</li>
+                  </ul>
+            </p>
+        </div>
+    </section>
+
+    <section id="section6" class="section">
+        <h2>Work</h2>
+        <div class="content">
+            <h3>Internship</h3>
+            <p>
+                Internship at the <a href="https://www.ph.tum.de/research/groups/group/TUPHEDS" class="normal-link">Data Science in Physics</a> (01.2023 - 04.2023)<br>
+            </p>
+        </div>
+    </section>
+
+    <section id="section7" class="section">
+        <h2>Work</h2>
+        <div class="content">
+            <h3>Private Tutoring</h3>
+            <p>
+                Private Tutoring in Math (09.2022 - now)
+            </p>
+        </div>
+    </section>
+
+    <section id="section8" class="section">
+        <h2>Sports</h2>
+        <div class="content">
+            <ul>
+                <li>Basketball</li>
+                <li>Boxing</li>
+                <li>CrossFit</li>
+                <li>Mountain Biking</li>
+                <li>Skiing</li>
+                <li>Soccer</li>
+                <li>Swimming</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="section9" class="section">
+        <h2>Interests</h2>
+        <div class="content">
+            <h3>Computer Science</h3>
+                <div class="content">
+                    <ul>
+                        <li>Machine learning and data science enthusiast</li>
+                        <li>Proficient in Python, familiar with C++ and MATLAB</li>
+                        <li>Experience with JAX, PyTorch, and TensorFlow</li>
+                        <li>Comfortable with Windows, Linux, and MacOS</li>
+                        <li>Web development using HTML and CSS</li>
+                        <li>Learning SWIFTUI for iOS development</li>
+                    </ul>
+                </div>
+            <h3>Free Time</h3>
+            
+                <ul>
+                    <li>Passionate about learning new things</li>
+                    <li>Enjoy spending time with friends and family</li>
+                </ul>
+        </div>
+    </section>
+
+    <script src="script_index_mobile.js"></script>
 </body>
-
 </html>

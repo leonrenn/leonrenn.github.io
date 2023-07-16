@@ -1,150 +1,133 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
-  font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
 }
 
-.container {
-  max-width: 1050px;
-  width: 90%;
-  margin: auto;
+/* Sticky menu styles */
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
 }
 
-.navbar {
-  width: 100%;
-  box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+/* Add space below the menu */
+.menu + section {
+    margin-top: 50px;
 }
 
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 62px;
+.section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    flex-direction: column; /* Stack content vertically */
 }
 
-.navbar .menu-items {
-  display: flex;
+.visible {
+    opacity: 1;
 }
 
-.navbar .nav-container li {
-  list-style: none;
+.name {
+    font-size: 80px;
+    letter-spacing: -2%;
+    color: white; 
+    font-family: Arial;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    cursor: default;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        white 0%,
+        #fe7e7e 18%,
+        #f14141 35%,
+        red 50%,
+        #fe7e7e 68%,
+        #f14141 85%,
+        white 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
 }
 
-.navbar .nav-container a {
-  text-decoration: none;
-  color: #0e2431;
-  font-weight: 500;
-  font-size: 1.2rem;
-  padding: 0.7rem;
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
-.navbar .nav-container a:hover{
-    font-weight: bolder;
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 10px;
 }
 
-.nav-container {
-  display: block;
-  position: relative;
-  height: 60px;
+.menu a.active {
+    text-decoration: underline;
 }
 
-.nav-container .checkbox {
-  position: absolute;
-  display: block;
-  height: 32px;
-  width: 32px;
-  top: 20px;
-  left: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
+.content {
+    display: none;
 }
 
-.nav-container .hamburger-lines {
-  display: block;
-  height: 26px;
-  width: 32px;
-  position: absolute;
-  top: 17px;
-  left: 20px;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.visible .content {
+    display: block;
 }
 
-.nav-container .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: #0e2431;
+.section .content p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
 }
 
-.nav-container .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
+.section .content ul {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+    padding-left: 20px;
 }
 
-.nav-container .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
+.section .content a {
+    font-size: 18px;
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-.nav-container .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
+.section .content a:hover {
+    color: red;
 }
 
-.navbar .menu-items {
-  padding-top: 120px;
-  box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-  height: 100vh;
-  width: 100%;
-  transform: translate(-150%);
-  display: flex;
-  flex-direction: column;
-  margin-left: -40px;
-  padding-left: 50px;
-  transition: transform 0.5s ease-in-out;
-  text-align: center;
-}
-
-.navbar .menu-items li {
-  margin-bottom: 1.2rem;
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-.logo {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 1.2rem;
-  color: #0e2431;
-}
-
-.nav-container input[type="checkbox"]:checked ~ .menu-items {
-  transform: translateX(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
-  transform: scaleY(0);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg);
-}
-
-.nav-container input[type="checkbox"]:checked ~ .logo{
-  display: none;
+.section .content a:visited {
+    color: inherit;
 }
