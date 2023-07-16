@@ -164,7 +164,10 @@ font-size: 14px;
 
 .example_todo{
   text-align: center;
-  
+}
+
+.example_marp{
+  text-align: center;
 }
 
   .footer {
