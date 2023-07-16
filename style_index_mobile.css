@@ -1,12 +1,9 @@
-
-
 body {
     margin: 0;
     padding: 0;
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
-    font-size: 200%;
 }
 
 /* Sticky menu styles */
@@ -20,7 +17,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    font-size: 200%; /* Increase font size by 100% */
+    font-size: 30px;
 }
 
 /* Add space below the menu */
@@ -44,7 +41,7 @@ body {
 }
 
 .name {
-    font-size: 160px; /* Increase font size by 100% */
+    font-size: 120px;
     letter-spacing: -2%;
     color: white; 
     font-family: Arial;
@@ -86,7 +83,7 @@ body {
 .menu a {
     color: white;
     text-decoration: none;
-    font-size: 40px; /* Increase font size by 100% */
+    font-size: 20px;
     margin: 0 10px;
 }
 
@@ -109,19 +106,19 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     text-align: left;
-    font-size: 36px; /* Increase font size by 100% */
+    font-size: 18px;
     line-height: 1.5;
 }
 
 .section .content ul {
     text-align: left;
-    font-size: 36px; /* Increase font size by 100% */
+    font-size: 18px;
     line-height: 1.5;
     padding-left: 20px;
 }
 
 .section .content a {
-    font-size: 36px; /* Increase font size by 100% */
+    font-size: 18px;
     color: inherit;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
