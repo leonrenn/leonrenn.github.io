@@ -38,7 +38,7 @@
   }
   
   nav a:hover {
-    color: #f00;
+    color: rgb(0, 149, 255);
   }
 
   .container {
@@ -61,11 +61,11 @@
   background-image: linear-gradient(
     -225deg,
     white 0%,
-    #fe7e7e 18%,
-    #f14141 35%,
-    red 50%,
-    #fe7e7e 68%,
-    #f14141 85%,
+    #7ec0fe 18%,
+    #419ff1 35%,
+    rgb(0, 149, 255) 50%,
+    #419ff1 68%,
+    #7ec0fe 85%,
     white 100%
   );
   background-size: auto auto;
@@ -129,7 +129,7 @@ section {
     font-style: italic;
   }
   .normal-link:hover{
-    color:red;
+    color:rgb(0, 149, 255);
   }
 
   .p {
